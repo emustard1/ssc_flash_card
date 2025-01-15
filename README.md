@@ -3,3 +3,7 @@
 Flashcard app
 
 Project for SSC work experience
+
+
+Packages:
+Flask
