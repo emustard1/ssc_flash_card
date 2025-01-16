@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
@@ -9,9 +9,23 @@ maths = [('What is 1 + 1?', '2')]
 def home():
     return render_template('index.html')
   
-@app.route('/test')
+@app.route('/test', methods =["GET", "POST"])
 def question():
-   return render_template('test.html', question=maths)
+    
+    #get answer
+    if request.method == "POST":
+        user_answer = request.form.get("u_answer")
+      
+    #compare answer to original
+    if user_answer == maths[0][1]:
+        return render_template("correct.html")
+    elif user_answer != maths[0][1]:
+       return render_template("incorrect.html", user_answer)
+
+      #we get input in a string
+      #need to compare this to the correct answer
+      #if 
+    return render_template('test.html')
 
 @app.route('/score')
 def display_scores():

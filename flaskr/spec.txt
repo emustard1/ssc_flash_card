@@ -4,25 +4,34 @@ For mvp maybe just create an array
 Question page:
 Display the question - DONE
 Create an input for the answer - DONE
+Submit button to check answer -
 
 Need to integrate wtforms in the page to evaluate the answers
 
 
     If correct:
-        Display correct -
+        Display correct html
 
     Else:
-        Display the current answer,
+        Display the current answer
         Display the right answer
         Display the next button
 
 
 
 Total score page:
-Total score title
-Create a score square
+Total score title - DONE
+Create a score square - DONE
 Feedback unit
+    Overall box div - DONE
     Display incorrect questions
+    Styling
 
-Restart button DONE
-Exit button DONE
+eot element: 
+    Box casing -  DONE
+    Restart button
+        Links - DONE
+        styling
+    Exit button 
+        Links - DONE
+        styling

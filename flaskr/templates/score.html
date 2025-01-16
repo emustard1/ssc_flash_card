@@ -5,20 +5,25 @@
 {%block content%} 
 
     <h2>Total score</h2>
+    <div id="total_score_box">
 
-    <h2>Feedback</h2>
-    
-    <p>Here are the questions you missed:</p>
+
+    </div>
+
     <br>
     <br>
 
+    <div id="feedback_box">
+        <h2>Feedback</h2>
+
+        <p>Here are the questions you missed:</p>
+        <br>
+        <br>
+    </div>
         
-    <a href="/test">
-        <button type="button">Restart</button>
-    </a>
-    <a href="/">
-        <button type="button">Exit</button>
-    </a>
-
+    <div id="eot_links">
+        <a href="/test"><button type="button">Restart</button></a>
+        <a href="/"><button type="button">Exit</button></a>
+    </div>
 {%endblock%}
 
