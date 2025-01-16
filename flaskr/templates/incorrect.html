@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+<h1> {%block title%} Homepage {%endblock%}</h1>
+
+{%block content%} 
+    <form>
+        <h3>Question 1</h3>
+        {{question[0][0]}}
+        <br>
+        <br>
+        <label>Answer</label>
+        <input type="text" id="user_answer" name="u_answer">
+        <br><br>
+
+        <a href=""><button>Incorrect!</button></a>
+    </form>
+{%endblock%}
