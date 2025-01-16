@@ -5,6 +5,9 @@ Question page:
 Display the question - DONE
 Create an input for the answer - DONE
 
+Need to integrate wtforms in the page to evaluate the answers
+
+
     If correct:
         Display correct -
 
@@ -13,9 +16,13 @@ Create an input for the answer - DONE
         Display the right answer
         Display the next button
 
+
+
 Total score page:
-Create a score circle/square
+Total score title
+Create a score square
 Feedback unit
     Display incorrect questions
-Restart button
-Exit button
+
+Restart button DONE
+Exit button DONE

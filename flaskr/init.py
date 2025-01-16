@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 maths = [('What is 1 + 1?', '2')]
 
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -14,8 +15,9 @@ def question():
 
 @app.route('/score')
 def display_scores():
-   return render_template('score.html')
-
+  #wrong_answers = [(number, maths[0])]
+  return render_template('score.html') 
+    
   
 if __name__ == "__main__":
   app.run(debug=True)
