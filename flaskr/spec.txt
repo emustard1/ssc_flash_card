@@ -1,2 +1,2 @@
-Create a database
+For mvp maybe just create an array instead of using a db
 
