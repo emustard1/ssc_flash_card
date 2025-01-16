@@ -3,13 +3,15 @@
 <h1> {%block title%} Homepage {%endblock%}</h1>
 
 {%block content%} 
-    <form>
         <h3>Question 1</h3>
         {{question[0][0]}}
         <br>
         <br>
-        <label>Answer</label>
-        <input type="text" id="user_answer" name="u_answer">
-        <br><br>
+
+    <form id="question_response">
+        <label for="user_answer">Answer</label>
+        <input type="text" name="user_answer">
     </form>
-{%endblock%}
+
+    <button type="submit" form="question_response">Submit</button>
+{%endblock%}    
