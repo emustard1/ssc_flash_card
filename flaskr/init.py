@@ -2,22 +2,19 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+maths = [('What is 1 + 1?', '2')]
+
 @app.route('/')
 def home():
     return render_template('index.html')
   
-
-@app.route('/create')
-def create_flashcard():
-   return 0
-
-@app.route('/question')
+@app.route('/test')
 def question():
-   return 0
+   return render_template('test.html', question=maths)
 
-@app.route('/question/score')
+@app.route('/score')
 def display_scores():
-   return 0
+   return render_template('score.html')
 
   
 if __name__ == "__main__":

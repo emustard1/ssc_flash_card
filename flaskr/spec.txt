@@ -1,2 +1,21 @@
-For mvp maybe just create an array instead of using a db
+For mvp maybe just create an array
 
+
+Question page:
+Display the question - DONE
+Create an input for the answer - DONE
+
+    If correct:
+        Display correct -
+
+    Else:
+        Display the current answer,
+        Display the right answer
+        Display the next button
+
+Total score page:
+Create a score circle/square
+Feedback unit
+    Display incorrect questions
+Restart button
+Exit button
