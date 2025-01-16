@@ -15,10 +15,9 @@ def create_flashcard():
 def question():
    return 0
 
-@app.route('/score')
+@app.route('/question/score')
 def display_scores():
    return 0
-
 
   
 if __name__ == "__main__":
